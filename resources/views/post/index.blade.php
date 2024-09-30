@@ -34,15 +34,15 @@
 
 @endforelse
 
-<p>{{"category".$post->category_id}}</p>
+<p>{{$post->category->category}}</p>
 
-@foreach ($use as  $values)
+
 
     {{-- @if (intval($key+1)==intval($post->id)) --}}
-        {{$values}}
+        {{$post->user->name}}
     {{-- @endif --}}
 
-@endforeach
+
 <div  style=" display: flex;
 flex-direction: column;
 justify-content: center;
